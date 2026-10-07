@@ -1,0 +1,34 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("assets/images/fundo.jpg") center/cover no-repeat,
+    linear-gradient(135deg, #0D1117, #132744);
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .projetos-container { grid-template-columns: 1fr; }
+  .menu-bar { flex-direction: column; gap: 10px; }
+}
+
+html {
+  scroll-behavior: smooth;
+}

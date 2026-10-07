@@ -1,0 +1,19 @@
+footer {
+    background-color: #183757;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer img {
+    width: 70px;
+    height: auto;
+}
+
+footer img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

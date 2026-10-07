@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/images/sobremim.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem 1.5rem;
+  gap: 1rem;
+}
+
+header h1 {
+  color: #013269;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  margin: 0;
+}
+
+header a {
+  font-size: 1rem;
+  color: #013269;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+header a:hover {
+  color: #fff;
+  background: rgba(147, 197, 253, 0.15);
+  border-color: rgba(147, 197, 253, 0.7);
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.sobre-mim > div {
+  background: rgba(54, 52, 52, 0.162);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(8px);
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.sobre-mim .frase {
+  grid-area: frase;
+}
+
+.sobre-mim h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #93c5fd;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sobre-mim p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.sobre-mim ul {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: #cbd5e1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sobre-mim ul li::before {
+  content: '→ ';
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.frase {
+  grid-column: 1 / -1;
+  text-align: center;
+  border-color: rgba(55, 120, 200, 0.3) !important;
+  padding: 2.5rem !important;
+}
+
+.frase h1 {
+  font-size: 1rem !important;
+  margin-bottom: 0.75rem;
+}
+
+.frase p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
+  font-style: italic;
+  color: #e2e8f0 !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .sobre-mim {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "foto"
+      "quem"
+      "visao"
+      "skills"
+      "habitos"
+      "frase";
+  }
+
+  .sobre-mim .b {
+    min-height: 260px;
+  }
+
+  .frase {
+    grid-column: 1 / -1;
+  }
+}

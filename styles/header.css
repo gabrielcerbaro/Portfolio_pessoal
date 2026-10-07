@@ -1,0 +1,59 @@
+.header {
+    background-image: url(../assets/images/header-fundo.avif);
+    background-size: cover;
+    color: #C9D1D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.foto-perfil {
+    border: 1px solid #C9D1D9;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(3, 74, 155, 0.5);
+}
+
+.header strong {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+    color: blueviolet;
+}
+
+.header p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.header h3 {
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    border-bottom: 1px solid #C9D1D9;
+    border-top: 1px solid #C9D1D9;
+    border-image: linear-gradient(to right, transparent, #C9D1D9, transparent) 1;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.icons img {
+    margin-top: 20px;
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+.icons img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
