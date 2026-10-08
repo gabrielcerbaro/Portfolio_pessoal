@@ -7,8 +7,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
-    background: url("assets/images/fundo.jpg") center/cover no-repeat,
-    linear-gradient(135deg, #0D1117, #132744);
+    background: linear-gradient(135deg, #0D1117, #132744);
     width: 100%;
 }
 
@@ -22,11 +21,6 @@ main {
 
 header {
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .projetos-container { grid-template-columns: 1fr; }
-  .menu-bar { flex-direction: column; gap: 10px; }
 }
 
 html {

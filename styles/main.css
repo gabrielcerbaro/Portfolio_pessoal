@@ -25,9 +25,9 @@
 
 .nav-bar a:hover {
     color: blueviolet;
-    border-bottom: 1px solid blueviolet;
     border-image: linear-gradient(to right, transparent, blueviolet, transparent) 1;
-    font-size: 1.2rem;
+    border-bottom: 3px solid transparent;
+    transform: translateY(-3px);
 }
 
 .progresso-container {
@@ -44,7 +44,7 @@
     border-radius: 10px;
     justify-content: center;
 }
-.meu-progresso h1 {
+.meu-progresso h2 {
     font-size: 20px;
     color: blueviolet;
 }
@@ -107,10 +107,6 @@
     padding: 10px;
 }
 
-.card h1 {
-    font-size: 30px;
-}
-
 .card-front {
     color: #C9D1D9;
     background: rgba(138, 43, 226, 0.12);
@@ -155,7 +151,7 @@
     align-items: center;
 }
 
-.projetos h1 {
+.titulo-secao {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -181,7 +177,7 @@
     gap: 20px;
 }
 
-.projetos-container div {
+.projeto-card {
     padding: 20px;
     border-radius: 20px;
     background-color: #e1e6f005;
@@ -190,6 +186,16 @@
     align-items: center;
     gap: 10px;
     height: 100%;
+    border-bottom: 1px solid #C9D1D9;
+    border-top: 1px solid #C9D1D9;
+    border-image: linear-gradient(to right, transparent, #2467aa, transparent) 1;
+    border-radius: 20px;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    background-color: #e1e6f020;
 }
 
 .projetos-container img { 
@@ -199,14 +205,13 @@
 }
 
 .projetos-container p { 
-
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-.projetos-container h2 { 
+.titulo-projeto { 
     color: blueviolet;
     font-size: 24px;
     font-weight: bold;
@@ -218,31 +223,15 @@
     color: #C9D1D9;
 }
 
-.projetos-container div {
-    background-color: #e1e6f005;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    border-bottom: 1px solid #C9D1D9;
-    border-top: 1px solid #C9D1D9;
-    border-image: linear-gradient(to right, transparent, #2467aa, transparent) 1;
-    border-radius: 20px;
-}
-
-.projetos-container div:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    background-color: #e1e6f020;
-}
-
 .card1 { grid-area: card1; }
 .card2 { grid-area: card2; }
 .card3 { grid-area: card3; }
 .card4 { grid-area: card4; }
 .card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
 
 @media (max-width: 768px) {
+   
   .nav-bar { 
     flex-direction: column; gap: 12px; 
     }   
@@ -252,8 +241,9 @@
   .progresso div { 
     width: 100%; max-width: 420px; 
     }
-  .projetos-container { 
-    grid-template-columns: 1fr; gap: 20px; 
+  .projetos-container {
+    grid-template-areas: none;
+    grid-template-columns: 1fr; gap: 20px;
     }
   .container { 
     padding: 0 16px; 

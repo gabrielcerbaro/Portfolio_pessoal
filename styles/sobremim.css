@@ -84,11 +84,7 @@ main {
   transition: background 0.25s ease, border-color 0.25s ease;
 }
 
-.sobre-mim .frase {
-  grid-area: frase;
-}
-
-.sobre-mim h1 {
+.titulo-secao-sobremim {
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -122,18 +118,6 @@ main {
   font-weight: bold;
 }
 
-.frase {
-  grid-column: 1 / -1;
-  text-align: center;
-  border-color: rgba(55, 120, 200, 0.3) !important;
-  padding: 2.5rem !important;
-}
-
-.frase h1 {
-  font-size: 1rem !important;
-  margin-bottom: 0.75rem;
-}
-
 .frase p {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
@@ -144,22 +128,12 @@ main {
 }
 
 @media (max-width: 768px) {
-  .sobre-mim {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "foto"
-      "quem"
-      "visao"
-      "skills"
-      "habitos"
-      "frase";
+  .sobre-mim > div {
+    width: 100%;
+    padding: 1.5rem;
   }
 
-  .sobre-mim .b {
-    min-height: 260px;
-  }
-
-  .frase {
-    grid-column: 1 / -1;
+  .frase p {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem) !important;
   }
 }
