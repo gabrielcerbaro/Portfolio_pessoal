@@ -1,0 +1,30 @@
+/* Paleta: azul-marinho profundo + dourado.
+   Para trocar o visual do site inteiro, altere só os valores aqui. */
+:root {
+    /* Azuis (do mais escuro para o mais claro) */
+    --navy-950: #060B16;
+    --navy-900: #0A1428;
+    --navy-800: #0F1F3D;
+    --navy-700: #17305C;
+
+    /* Dourados */
+    --gold-300: #EAD594;
+    --gold-400: #E0C066;
+    --gold-500: #D4AF37;
+    --gold-700: #A07E1C;
+
+    /* Texto */
+    --text: #EEF1F7;
+    --text-muted: #C2CBDC;
+
+    /* Superfícies (fundo de cards e divs) */
+    --surface: rgba(23, 48, 92, 0.38);
+    --surface-hover: rgba(23, 48, 92, 0.62);
+    --surface-strong: rgba(8, 16, 32, 0.82);
+
+    /* Bordas e brilhos */
+    --border-gold: rgba(212, 175, 55, 0.42);
+    --border-gold-strong: rgba(212, 175, 55, 0.75);
+    --glow-gold: rgba(212, 175, 55, 0.35);
+    --shadow: rgba(0, 0, 0, 0.5);
+}

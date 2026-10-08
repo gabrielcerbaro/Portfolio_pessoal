@@ -1,7 +1,7 @@
 .header {
-    background-image: url(../assets/images/header-fundo.avif);
+    background-image: linear-gradient(180deg, rgba(6, 11, 22, 0.55), rgba(10, 20, 40, 0.92)), url(../assets/images/header-fundo.avif);
     background-size: cover;
-    color: #C9D1D9;
+    color: var(--text-muted);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,31 +9,35 @@
     gap: 10px;
 }
 .foto-perfil {
-    border: 1px solid #C9D1D9;
+    border: 2px solid var(--gold-500);
     width: 200px;
     height: auto;
     border-radius: 50%;
     align-items: center;
-    box-shadow: 0 0 25px rgba(3, 74, 155, 0.5);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.12), 0 0 30px var(--glow-gold);
 }
 
 .titulo-principal {
     font-size: 50px;
     margin: 0;
     margin-top: 10px;
-    color: blueviolet;
+    color: var(--gold-400);
+    text-align: center;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
 }
 
 .header p {
     font-size: 20px;
     margin-top: 0;
+    text-align: center;
+    color: var(--text);
 }
 
 .icons {
     display: flex;
-    border-bottom: 1px solid #C9D1D9;
-    border-top: 1px solid #C9D1D9;
-    border-image: linear-gradient(to right, transparent, #C9D1D9, transparent) 1;
+    border-bottom: 1px solid var(--border-gold);
+    border-top: 1px solid var(--border-gold);
+    border-image: linear-gradient(to right, transparent, var(--gold-500), transparent) 1;
     max-width: 1200px;
     width: 100%;
     padding: 10px;
@@ -45,9 +49,11 @@
     margin-top: 20px;
     width: 50px;
     height: auto;
+    filter: drop-shadow(0 4px 8px var(--shadow));
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .icons img:hover {
     transform: translateY(-5px);
-    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 12px var(--glow-gold));
 }

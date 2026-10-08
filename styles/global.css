@@ -5,9 +5,9 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0D1117, #132744);
+    background: linear-gradient(135deg, var(--navy-950), var(--navy-800));
+    color: var(--text);
     width: 100%;
 }
 
